@@ -11,7 +11,10 @@ github地址：
 
 #### 用法
 > 需引入message.css与message.js
-
+```
+  <link rel="stylesheet" href="message.css">
+  <script src="Message.js"></script>
+```
 为元素加上`onclick="$.fn.msg('msg', { text: '警告消息', type: 'warning', position: ' middle-center' })"`事件函数，可以自动为元素添加点击后，可以全局添加提示框功能，可以多次添加。如配置为了手动关闭，提示框会出现×字符，点击会将其从DOM中删除
 ```
 
@@ -71,4 +74,4 @@ danger危险消息 $.fn.msg('msg', { text: '危险消息', type: 'danger', posit
 引入jquery<2.0下:支持>=IE8
 
 #### 源码解析
-请阅读 [源码解析](./src/message.js)
+请阅读 [src/message.js](./src/message.js)
