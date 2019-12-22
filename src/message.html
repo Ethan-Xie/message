@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./message.css">
+  <script src="./jquery-1.11.1.min.js"></script>
+  <!--橘黄色：#fd6c00 <script src="./lib/bootstrap.js"></script> top-left, top-center, top-right, middle-left, middle-center, middle-right #ef810f 好看的background-color: #dcf5dc;草绿背景#ffffc0黄色：#efeb85 border: 2px solid #debe6b;-->
+  <script src="./bootstrap-tooltips.js"></script>
+
+</head>
+<body style="width:auto;">
+    <div>
+            <button type="button" onclick="$().msg('msg',  { text: '一般消息', type: 'info', position: 'top-center' })"  class="btn btn-primary btn-warning">
+                   info一般消息 $().msg('msg',  { text: '一般消息', type: 'info', position: 'top-center' })
+            </button> <br>
+            <button type="button" onclick="$().msg('msg',  { text: '通知消息', type: 'notice', position: 'top-center' })" class="btn btn-primary btn-warning">
+                   notice通知消息 $().msg('msg',  { text: '通知消息', type: 'notice', position: 'top-center' })
+            </button> <br>
+            <button type="button" onclick=" $().msg('msg',  { text: '成功消息', type: 'success', position: 'middle-left' })" class="btn btn-primary btn-warning">
+                   success成功消息 $().msg('msg',  { text: '成功消息', type: 'success', position: 'top-center' })
+            </button> <br>
+            <button type="button" onclick="$().msg('msg',  { text: '警告消息', type: 'warning', position: ' middle-center' })" class="btn btn-primary btn-warning">
+                   warning警告消息 $().msg('msg',  { text: '警告消息', type: 'warning', position: 'top-center' })
+            </button> <br>
+            <button type="button"  onclick="$().msg('msg',  { text: '危险消息', type: 'danger', position: 'middle-right' })" class="btn btn-primary btn-warning">
+                   danger危险消息 $().msg('msg',  { text: '危险消息', type: 'danger', position: 'top-center' })
+            </button> <br>
+            <button type="button"  onclick="$().msg('我是测试str')" class="btn btn-primary btn-warning">
+                       最简单调用方式： $().msg('我是测试str')
+                </button> <br>
+            <button type="button"  onclick="$().msg({ text: '我是测试object', type: 'info', position: 'top-center',close: true,sticky:true })" class="btn btn-primary btn-warning">
+                       次简单调用方式,不自动消失，并有消失按钮：$().msg({ text: '我是测试object', type: 'info', position: 'top-center',close: true,sticky:true })
+                </button> <br>
+
+
+    </div>
+
+    <!-- <script src="./lib/msgMessage.js"></script> -->
+    <script src="./Message.js"></script>
+</body>
+</html>
